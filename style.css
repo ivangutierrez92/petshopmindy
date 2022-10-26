@@ -29,18 +29,26 @@
 .container{
     min-height: 65vh;
 }
+/* empieza formulario de contacto */
 .formulario{
-    background-image: linear-gradient(-225deg, rgb(40,213,145)50%, rgb(18,37,20) 50%);
+    background-image: linear-gradient(-225deg,rgb(18,37,20) 50%, rgb(40,213,145) 50%);
     margin: 1rem;
+    border-radius: 1rem;
+    -webkit-text-stroke: .1px rgb(4, 255, 154);;
 }
 .titulo-de-form{
     margin: 0.5rem;
-    color: rgba(255, 255, 255, 0.655);
+    color: rgba(255, 255, 255, 0.765);
     -webkit-text-stroke: .2px black;
 }
 .formulario-texto-check{
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.922);
     -webkit-text-stroke: .4px black;
+}
+
+.form-tex-chebox{
+    color: rgba(0, 0, 0, 0.603);
+    font-weight: bolder;
 }
 
 .img-fomulario{
@@ -50,7 +58,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+/* termina formulario de contacto */
 
 footer{
     color: white;
