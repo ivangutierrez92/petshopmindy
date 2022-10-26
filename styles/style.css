@@ -5,7 +5,7 @@
     font-family: 'Asap', sans-serif;
 }
 
-
+/* -------- COLORES GLOBALES ------------- */
 :root{
     --color-primario: rgb(14,151,93);
     --color-secundario: rgb(18,37,20);
@@ -16,12 +16,16 @@
     --violeta:#751C65;
 }
 
+/* ------------ BODY ------------------- */
+
 body{
     background-image: url(https://cdn.pixabay.com/photo/2016/03/27/21/16/pet-1284307_960_720.jpg);
     /* background-color: orange; */
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+/* ----------- HEADER -------------------- */
 
 .logo{
     width: 7rem;
@@ -52,8 +56,10 @@ body{
     width: 40px;
 }
 
+/* ---------------- MAIN (CONTENIDO DE CADA PAGINA) -------------- */
+
 .container{
-    min-height: 90vh;
+    min-height: 90vh; /* -------- IMPORTANTE PARA QUE EL FOOTER QUEDE SI O SI CON SCROLL VERTICAL */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +97,8 @@ body{
 .bold{
     font-weight: bold;
 }
+
+/* ---------------- FOOTER ----------------- */
 
 .footer{
     color: white;
@@ -133,6 +141,8 @@ body{
 .nav-link{
     color: white;
 }
+
+/* -------------- MEDIA QUERIES -------------- */
 
 @media screen and (max-width: 1000px){
     .footer{
