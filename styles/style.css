@@ -45,6 +45,12 @@ body{
     border-radius: 5% 5% 20% 20%;
 }
 
+#carrito-img{
+    padding: 3px;
+    background-color: var(--violeta);
+    border-radius: 50%;
+    width: 40px;
+}
 
 .container{
     min-height: 90vh;
@@ -98,7 +104,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .sociales-footer img{
@@ -110,20 +116,41 @@ body{
     gap: 2rem;
 }
 
-.footer dt,dd{
+.contacto{
+    display: flex;
+    gap: 3rem;
+}
+
+.contacto p{
     padding-top: 80px;
 }
 
-.logo-footer{
-    width: 4rem;
-    height: 4rem;
-}
-
-dd>a{
+.contacto p>a{
     text-decoration: none;
     color: var(--blanco);
 }
 
 .nav-link{
     color: white;
+}
+
+@media screen and (max-width: 1000px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border-top-left-radius: 90% 20%;
+        border-top-right-radius: 90% 20%;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .ps-3{
+        padding-top: 0 !important;
+    }
 }
