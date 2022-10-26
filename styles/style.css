@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: rgb(14,151,93);
+    --color-secundario: rgb(18,37,20);
+    --color-terciario: rgb(96,165,126);
+    --color-cuaternario:rgb(40,213,145);
+    --marron:rgb(111,86,29);
+    --blanco: #f5f7fb;
+}
+
+body{
+    background-image: url(https://img.freepik.com/foto-gratis/adorable-perro-basenji-marron-blanco-sonriendo-dando-maximo-cinco-aislado-blanco_346278-1657.jpg?w=2000);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background-color: var(--color-cuaternario);
+    height: 9vh;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+#navbarNav{
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+#navbarNav>a{
+    font-size: 1.1rem;
+    background-color: var(--color-secundario);
+    padding: .4rem;
+}
+
+#logo-nav{
+    height: 6rem;
+}
+
+main{
+    min-height: 91vh;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    background-color: var(--color-secundario);
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+}
+
+footer p, footer h3{
+    color: var(--blanco)
+}
+
+.sociales-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sociales-footer img{
+    height: 3rem;
+}
+
+#redes{
+    display: flex;
+    gap: 2rem;
+}
+
+.contacto-footer a{
+    text-decoration: none;
+    color: var(--color-cuaternario);
+}
+
+.copy-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-footer img{
+    width: 12rem;
+}
