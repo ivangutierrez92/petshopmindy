@@ -1,13 +1,41 @@
 let $botoon = document.getElementById("registrojs")
-$botoon.addEventListener( 'click', registrar )
-function registrar(){
-    let datosDeCliente = []
-        nombre = '',
-        apellido = ''
+$botoon.addEventListener('click', registrar)
 
-    nombre = document.querySelector('#nombre').value;
-    apellido = document.querySelector('#apellido').value;
+let form = document.getElementById("formulari")
 
-    console.log('nombre' + nombre);
-    console.log('apellido' + apellido);
+
+
+
+function registrar(event) {
+    event.preventDefault()
+    let datosDeCliente = {
+        nombre: "",
+        apellido: "",
+        mail: "",
+        telefono: 0,
+        nombreDeMascota: "",
+        tipoDeMascota: "",
+        comentario: ""
+    }
+    datosDeCliente.nombre = document.querySelector("#nombre").value
+    datosDeCliente.apellido = document.querySelector("#apellido").value
+    datosDeCliente.mail = document.querySelector("#email").value
+    datosDeCliente.telefono = document.querySelector("#telefono").value
+    datosDeCliente.nombreDeMascota = document.querySelector("#nombreMascota").value
+    datosDeCliente.tipoDeMascota = [...document.querySelectorAll('input[type="radio"]:checked')].map(event => event.value)
+    datosDeCliente.comentario = document.querySelector("#validationTextarea").value
+    
+    let datosDeClienteArry = JSON.parse(localStorage.getItem("datos"))
+    datosDeClienteArry.push(datosDeCliente)
+    localStorage.setItem("datos", JSON.stringify(datosDeClienteArry)) 
+    
+    swal({
+        text: "se guardaron los datos correctamente",
+        icon: "success",
+})
+form.reset();
 }
+
+
+
+
