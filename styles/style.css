@@ -1,0 +1,275 @@
+/* -------- COLORES GLOBALES ------------- */
+
+:root {
+    --color-primario: #751C65;
+    --color-secundario: #FC9824;
+    --color-terciario: rgb(18, 37, 20);
+    --color-cuaternario: #58EDF5;
+    --marron: rgb(111, 86, 29);
+    --blanco: #f5f7fb;
+}
+
+/* ----------- HEADER -------------------- */
+
+.logo {
+    width: 180px;
+}
+
+.logo-varios {
+    width: 150px;
+}
+
+#header {
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/img/1958.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header-varios {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../assets/img/bannersinperro.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.garra {
+    background-image: url(../assets/img/garrita.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.garra-activa {
+    background-image: url(../assets/img/garritablanca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+    text-shadow: white 2px 2px 10px;
+}
+
+.nav-link.garra-activa {
+    color: black;
+}
+
+.nav-link.garra-activa:hover {
+    color: black;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    color: white;
+}
+
+.carrito {
+    text-shadow: black 2px 2px 10px;
+    z-index: 10;
+}
+
+/* ---------------- MAIN (CONTENIDO DE CADA PAGINA) -------------- */
+
+.carrusel {
+    max-height: 710px;
+}
+
+.container {
+    min-height: 65vh;
+    text-align: center;
+}
+
+.texto-bienvenida {
+    padding: 10px;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-primario);
+    box-shadow: 5px 5px 10px -3px var(--color-secundario), -5px -5px 150px 3px #00000069;
+}
+
+h2 {
+    font-family: 'Fugaz One', cursive;
+}
+
+.texto-bienvenida h4 {
+    line-height: 1.5;
+}
+
+#mascotas {
+    position: absolute;
+    width: 460px;
+
+    margin-top: -260px;
+}
+
+#gato1 {
+    position: absolute;
+    width: 220px;
+    margin-left: -500px;
+    margin-top: -130px;
+}
+
+#gato2 {
+    display: none;
+}
+
+
+/* ---------------- FOOTER ----------------- */
+
+.footer {
+    color: white;
+    background-color: var(--color-primario);
+    border-top-left-radius: 80% 60%;
+    border-top-right-radius: 80% 60%;
+    min-height: 15vh;
+}
+
+.sociales-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.sociales-footer img {
+    height: 2rem;
+}
+
+#redes {
+    display: flex;
+    gap: 2rem;
+}
+
+#redes a:hover {
+    transform: scale(1.5);
+    transition: .3s ease-in-out;
+}
+
+.contacto {
+    display: flex;
+    gap: 3rem;
+}
+
+.contacto p {
+    padding-top: 80px;
+}
+
+.contacto p>a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.contacto a:hover {
+    color: var(--color-secundario);
+}
+
+/* -------------- MEDIA QUERIES -------------- */
+
+
+@media screen and (max-width:1399px) {
+    #mascotas {
+        margin-top: -290px;
+    }
+
+    #gato1 {
+        margin-left: -400px;
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+    #mascotas {
+        width: 390px;
+        margin-top: -270px;
+    }
+}
+
+@media screen and (max-width: 1004px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border-top-left-radius: 90% 20%;
+        border-top-right-radius: 90% 20%;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .ps-3 {
+        padding-top: 0 !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .logo {
+        width: 120px;
+    }
+
+    .garra-activa {
+        text-shadow: none;
+    }
+
+    .garra:not(.carrito),
+    .garra-activa {
+        background-image: none;
+        padding: 4px;
+    }
+
+    #gato1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:787px) {
+    #mascotas {
+        width: 260px;
+        margin-top: -206px;
+        
+    }
+}
+@media screen and (max-width:767px) {
+    #mascotas {
+        margin-top: -246px;
+        margin-left: -100px;     
+    }
+}
+
+@media screen and (max-width:550px) {
+    #header {
+        background-image: url(../assets/img/bannersinperro.png);
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 330px;
+    }
+
+    .texto-bienvenida h2,
+    h3,
+    h4 {
+        font-size: 0.9rem;
+    }
+    #mascotas{
+        margin-top: -170px;
+    }
+}
+@media screen and (max-width:550px){
+    #mascotas{
+        margin-left: -110px;
+        margin-top: -185px;
+    }
+}
