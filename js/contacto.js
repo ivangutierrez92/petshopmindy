@@ -1,13 +1,14 @@
 let $boton = document.getElementById("registrojs");
 $boton.addEventListener("click", registrar);
 
+
 function registrar(event) {
   event.preventDefault();
   let datosDeCliente = {
     nombre: "",
     apellido: "",
     mail: "",
-    telefono: 0,
+    telefono: "",
     nombreDeMascota: "",
     tipoDeMascota: "",
     comentario: "",
@@ -21,14 +22,19 @@ function registrar(event) {
     event => event.value
   );
   datosDeCliente.comentario = document.querySelector("#validationTextarea").value;
-
-  let datosDeClienteArry = JSON.parse(localStorage.getItem("datos"));
-  datosDeClienteArry.push(datosDeCliente);
-  localStorage.setItem("datos", JSON.stringify(datosDeClienteArry));
+    let datosClienteArray = localStorage.getItem("datos-contacto");
+    if(!datosClienteArray) {
+        datosClienteArray = [];
+    } else {
+        datosClienteArray = JSON.parse(datosClienteArray);
+    }
+  datosClienteArray.push(datosDeCliente);
+  localStorage.setItem("datos-contacto", JSON.stringify(datosClienteArray));
 
   swal({
     text: "se guardaron los datos correctamente",
     icon: "success",
   });
-  form.reset();
+  event.target.form.reset();
+
 }

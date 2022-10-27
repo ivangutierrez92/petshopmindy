@@ -23,7 +23,6 @@
   background-image: linear-gradient(-225deg, rgb(18, 37, 20) 50%, var(--color-primario) 50%);
   margin: 1rem;
   border-radius: 1rem;
-  -webkit-text-stroke: 0.1px rgb(4, 255, 154);
 }
 .titulo-de-form {
   margin: 0.5rem;
@@ -66,7 +65,7 @@
 }
 
 .mapa {
-  width: 100%;
+  width: 400px;
 }
 /* termina formulario de contacto */
 
@@ -78,3 +77,12 @@
     width: 350px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+    .contenedor-form {
+      flex-direction: column;
+    }
+    .mapa {
+      width: 250px;
+    }
+  }
