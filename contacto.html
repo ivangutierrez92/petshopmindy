@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a6d542c7b4.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/img/logo.png">
-    <title>Mindy PetShop</title>
+    <title>Mindy PetShop Contacto</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <header class="curved">
@@ -25,8 +26,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
                         <a class="nav-link" href="#">Juguetes</a>
                         <a class="nav-link" href="#">Remedios</a>
                         <a class="nav-link" href="#">Carrito</a>
@@ -35,11 +36,11 @@
             </div>
         </nav>
     </header>
-    <div class="bg-dark">
-        <main class="flex-grow-1 container py-4 ">
+    <div>
+        <main class="flex-grow-1 container py-4 " id="form">
             <h2>Contacto</h2>
             <div class="contenedor-form col-12 flex-grow-1 container py-4 d-flex flex1row gap-lg-4 justify-content-around">
-                <form class="formulario col-sm-12 col-md-6 d-flex flex-column align-items-center">
+                <form class="formulario col-sm-12 col-md-6 d-flex flex-column align-items-center" id="formulari">
                     <h3  class="titulo-de-form">formulario de contacto</h3>
                     <img src="./assets/img/logo.png" class="img-fomulario"alt="logo mindy">
                     <div class="row mb-3  col-12">
@@ -50,33 +51,33 @@
                     <div class="row mb-3 col-12">
                         
                         <div class="col-sm-12">
-                            <input type="text" class="form-control" id="apellido" placeholder="APELLIDO :">
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="APELLIDO :">
+                        </div>
+                    </div>
+                    <div class="row mb-3 col-12">
+                    
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" name="mail" placeholder="MAIL :">
                         </div>
                     </div>
                     <div class="row mb-3 col-12">
                         
                         <div class="col-sm-12">
-                            <input type="email" class="form-control" id="email" placeholder="MAIL :">
+                            <input type="number" class="form-control" id="telefono" name="telfono" placeholder="TELEFONO :">
                         </div>
                     </div>
                     <div class="row mb-3 col-12">
                         
                         <div class="col-sm-12">
-                            <input type="number" class="form-control" id="telefono" placeholder="TELEFONO :">
-                        </div>
-                    </div>
-                    <div class="row mb-3 col-12">
-                        
-                        <div class="col-sm-12">
-                            <input type="email" class="form-control" id="nombre-mascota" placeholder="NOMBRE DE MASCOTA :">
+                            <input type="text" class="form-control" id="nombreMascota" name="nombreMascota" placeholder="NOMBRE DE MASCOTA :">
                         </div>
                     </div>
                     <div class="d-flex gap-4 flex-wrap">
-                        <h6 class="formulario-texto-check">tipo de mascota:</h6>
+                        <h6 class="formulario-texto-check">Tipo de mascota:</h6>
                         <div class="row mb-3">
                             <div class="col-sm-10 offset-sm-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <input class="form-check-input" type="radio" id="gridCheck1" name="animal" value="perro">
                                     <label class="form-tex-chebox form-check-label" for="gridCheck1">Perro</label>
                                 </div>
                             </div>
@@ -84,7 +85,7 @@
                         <div class="row mb-3">
                             <div class="col-sm-10 offset-sm-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                    <input class="form-check-input" type="radio" id="gridCheck2" name="animal" value="gato">
                                     <label class="form-tex-chebox form-check-label" for="gridCheck2">
                                         Gato
                                     </label>
@@ -94,9 +95,9 @@
                         <div class="row mb-3">
                             <div class="col-sm-10 offset-sm-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                    <input class="form-check-input" type="radio" id="gridCheck3" name="animal" value="ave">
                                     <label class="form-tex-chebox form-check-label" for="gridCheck3">
-                                        ave
+                                        Ave
                                     </label>
                                 </div>
                             </div>
@@ -104,29 +105,19 @@
                         <div class="row mb-3">
                             <div class="col-sm-10 offset-sm-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                    <input class="form-check-input" type="radio" id="gridCheck4" name="animal" value="otro">
                                     <label class="form-tex-chebox form-check-label" for="gridCheck4">
-                                        Hámsters 
+                                        Otro 
                                     </label>
                                 </div>
                             </div>
                         </div>
-<!--                         <div class="row mb-3">
-                            <div class="col-sm-10 offset-sm-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">
-                                        Pez
-                                    </label>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12 d-flex justify-content-center" >
                         <textarea class ="form-control" id="validationTextarea" placeholder="deje su comentario"required></textarea>
                     </div> 
                     <div class="d-flex justify-content-center col-10 m-2" id="registrojs">
-                        <button type="button" value="registro" class="col-6 btn btn-success id="registrojss">enviar</button>
+                        <button type="submit" value="registro" class="col-6 btn btn-success id="registrojss">enviar</button>
                     </div>
                         
                 </form>
