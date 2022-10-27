@@ -1,7 +1,7 @@
 let $botoon = document.getElementById("registrojs")
+let form = document.getElementById("formulari")
 $botoon.addEventListener('click', registrar)
 
-let form = document.getElementById("formulari")
 
 
 
