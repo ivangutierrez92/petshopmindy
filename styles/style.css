@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Basic', sans-serif;
+
+
+}
+
+/* -------- COLORES GLOBALES ------------- */
+
+:root{
+    --naranja: #FC9824;
+    --violeta:#751C65;
+    --celeste:#58EDF5;
+    --color-primario: rgb(14,151,93);
+    --color-secundario: rgb(18,37,20);
+    --color-terciario: rgb(96,165,126);
+    --color-cuaternario:rgb(40,213,145);
+    --marron:rgb(111,86,29);
+    --blanco: #f5f7fb;
+}
+
+/* ----------- HEADER -------------------- */
+
+.logo{
+    width: 280px;
+}
+
+.logo-varios{
+    width: 150px;
+}
+
+#header{
+    width: 100%;
+    height: 65vh;
+    background-image: url(../assets/img/1958.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header-varios{
+    width: 100%;
+    height: 20vh;
+    background-image: url(../assets/img/bannersinperro.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#garra{
+    background-image: url(../assets/img/garrita.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+}
+#garra-activa{
+    background-image: url(../assets/img/garritablanca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+}
+
+.nav-link{
+    color: white;
+}
+
+
+/* ---------------- MAIN (CONTENIDO DE CADA PAGINA) -------------- */
+
+.carrusel{
+    max-height: 710px;
+}
+.container{
+    min-height: 65vh;
+    text-align: center;
+}
+
+.texto-bienvenida{
+    padding: 10px;
+    background-color: var(--naranja);
+    border: 2px solid var(--violeta);
+    box-shadow: 5px 5px 10px -3px var(--naranja), -5px -5px 150px 3px #00000069;
+    border-radius: 2mm;
+}
+
+h2{
+    font-family: 'Fugaz One', cursive;
+}
+
+.texto-bienvenida h4{
+    line-height: 1.5;
+}
+
+#mascotas{
+    position: absolute;
+    width: 460px;
+    margin-left: 130px;
+    margin-top: -260px;
+}
+
+#gato1{
+    position: absolute;
+    width: 220px;
+    margin-left: -500px;
+    margin-top: -130px;
+}
+#gato2{
+    display: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* ---------------- FOOTER ----------------- */
+
+.footer{
+    color: white;
+    background-color: var(--violeta);
+    border-top-left-radius: 80% 60%;
+    border-top-right-radius: 80% 60%;
+    min-height: 15vh;
+}
+
+.sociales-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.sociales-footer img{
+    height: 2rem;
+}
+
+#redes{
+    display: flex;
+    gap: 2rem;
+}
+
+#redes a:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.contacto{
+    display: flex;
+    gap: 3rem;
+}
+
+.contacto p{
+    padding-top: 80px;
+}
+
+.contacto p>a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.contacto a:hover{
+    color: var(--naranja);
+}
+
+/* -------------- MEDIA QUERIES -------------- */
+
+@media screen and (max-width:550px){
+    #header{
+        background-image: url(../assets/img/bannersinperro.png);
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        height: 45vh;
+    }
+    .logo{
+        height: 160px;
+    }
+    .texto-bienvenida h2,h3,h4{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .logo{
+        width: 160px;
+    }
+    #garra, #garra-activa{
+        background-image: none;
+        padding: 4px ;
+    }
+    #mascotas{
+        display: none;
+    }
+    #gato1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1004px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border-top-left-radius: 90% 20%;
+        border-top-right-radius: 90% 20%;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .ps-3{
+        padding-top: 0 !important;
+    }
+}
+
+@media screen and (max-width:1199px){
+    #mascotas{
+        width: 390px;
+        margin-left: 130px;
+        margin-top: -270px;
+    }    
+}
+
+@media screen and (max-width:1399px){
+    #mascotas{
+        width: 260px;
+        margin-top: -220px;
+    }
+    #gato1{
+        margin-left: -400px;
+    }
+    
+}
