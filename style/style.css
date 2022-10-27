@@ -11,7 +11,7 @@
 }
 
 .nav {
-  background-color: var(--color-primario);
+  
 }
 
 .btn-cart {
@@ -84,5 +84,5 @@ dd {
   color: white;
 }
 .nav {
-  background-color: var(--color-secundario);
+  background-color: var(--color-primario);
 }
