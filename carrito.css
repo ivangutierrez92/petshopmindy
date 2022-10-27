@@ -16,8 +16,8 @@
   transition: all 0.1s ease-in;
 }
 
-.btn-brand.rounded-circle {
-  padding: 4px 9px;
+.btn-brand.rounded-0 {
+  padding: 6px;
 }
 
 .btn-brand:hover {
