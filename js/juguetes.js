@@ -95,11 +95,11 @@ async function getData() {
     function makeCards(data, container) {
       container.innerHTML += `
           <div class="col">
-              <div class="card">
+              <div class="card h-100">
               <img src="${data.imagen}">
                 <div class="card-body ">
                 <h5 class="card-title">${data.nombre}</h5>
-                <div class="d-flex justify-content-center w-100 ">
+                <div class="d-flex justify-content-center w-100">
                   <button class="btn border border-info rounded-pill my-2">Precio:$ ${data.precio}</button>
                 </div>
                 </h6>
