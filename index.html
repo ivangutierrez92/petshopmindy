@@ -19,8 +19,8 @@
 </head>
 
 <body>
-  <header id="header">
-    <img src="./assets/img/Mindy_Logo.png" class="logo" alt="logo mindy">
+  <header class="pt-3 px-4" id="header">
+    <img src="./assets/img/logo-mindy.png" class="logo mb-5" alt="logo mindy">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -29,23 +29,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a id="garra-activa" class="nav-link" href="#">Inicio</a>
-            <a id="garra" class="nav-link" href="#">Contacto</a>
-            <a id="garra"class="nav-link" href="#">Juguetes</a>
-            <a id="garra"class="nav-link" href="./header.html">Remedios</a>
-            <a id="garra" class="nav-link" href="#">Carrito</a>
+            <a class="nav-link garra-activa" href="#">Inicio</a>
+            <a class="nav-link garra" href="#">Contacto</a>
+            <a class="nav-link garra" href="#">Juguetes</a>
+            <a class="nav-link garra" href="./header.html">Remedios</a>
+            
           </div>
         </div>
       </div>
     </nav>
+    <a class="nav-link position-fixed end-0 bottom-0 garra carrito" href="#"><i class="fa-sharp fa-solid fa-cart-shopping fs-3"></i></a>
   </header>
   <div>
     <main class="flex-grow-1 container py-4">
-      <div class="texto-bienvenida">
+      <div class="texto-bienvenida rounded">
         <h2>Bienvenidos a Mindy</h2>
-        <h3>Contamos con amplia variedad de <span class="bold">juguetes</span> y <span class="bold">productos farmacéuticos</span> para cuidar a tus mascotas.</h3>
+        <h3>Contamos con amplia variedad de <span class="fw-bold">juguetes</span> y <span class="fw-bold">productos farmacéuticos</span> para cuidar a tus mascotas.</h3>
         <img src="./assets/img/row.png" alt="perro golden retriever" id="mascotas">
-        <h4><span class="bold">¿Por qué Mindy?</span> La historia es un poco larga pero intentaré resumirla: Mindy es nuestra perrita que nos acompaña en nuestras vidas hace ya más de 13 años, rescatada  de un hogar donde sufrió constantes maltratos y mala alimentación con apenas 2 meses de vida. Gracias a la ayuda de unos vecinos pudimos encontrar la forma de quedarnosla y cuidarla. En ese momento nos dimos cuenta que nuestra verdadera pasión son los animales, y es por eso que decidimos dedicarnos a la venta de insumos para el cuidado de sus hermosas mascotas &#128154 
+        <h4><span class="fw-bold">¿Por qué Mindy?</span> La historia es un poco larga pero intentaré resumirla: Mindy es nuestra perrita que nos acompaña en nuestras vidas hace ya más de 13 años, rescatada  de un hogar donde sufrió constantes maltratos y mala alimentación con apenas 2 meses de vida. Gracias a la ayuda de unos vecinos pudimos encontrar la forma de quedarnosla y cuidarla. En ese momento nos dimos cuenta que nuestra verdadera pasión son los animales, y es por eso que decidimos dedicarnos a la venta de insumos para el cuidado de sus hermosas mascotas &#128154 
         Podés encontrar nuestra tienda física en el barrio de Caballito (CABA) y seguramente puedas conocer a Mindy que se la pasa durmiendo en su colchoncito del hall de entrada &#128518</h4>
       </div>
       <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="true">
@@ -58,13 +59,13 @@
         </div>
         <div class="carousel-inner carrusel">
           <div class="carousel-item active">
-            <img src="./assets/img/carouselimg1.jpg" class="d-block w-100" alt="x">
+            <img src="./assets/img/carouselimg1.jpg" class="d-block w-100" alt="Foto mascota 1">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/carouselimg2.jpg" class="d-block w-100" alt="x">
+            <img src="./assets/img/carouselimg2.jpg" class="d-block w-100" alt="Foto mascota 2">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/carouselimg3.jpg" class="d-block w-100" alt="x">
+            <img src="./assets/img/carouselimg3.jpg" class="d-block w-100" alt="Foto mascota 3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -97,7 +98,7 @@
                     <path fill-rule="evenodd"
                         d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
                 </svg>
-                <a href="https://goo.gl/maps/7iMX4zg1mA3byB8X9" target="_blank">Rio de janeiro 300, Caballito, CABA</a>
+                <a href="https://goo.gl/maps/7iMX4zg1mA3byB8X9" target="_blank">Rio de Janeiro 300, Caballito, CABA</a>
             </p>
             <p class="ps-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

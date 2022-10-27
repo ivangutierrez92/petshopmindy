@@ -1,22 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Basic', sans-serif;
-
-
-}
-
 /* -------- COLORES GLOBALES ------------- */
 
 :root{
-    --naranja: #FC9824;
-    --violeta:#751C65;
-    --celeste:#58EDF5;
-    --color-primario: rgb(14,151,93);
-    --color-secundario: rgb(18,37,20);
-    --color-terciario: rgb(96,165,126);
-    --color-cuaternario:rgb(40,213,145);
+    --color-primario: #751C65;
+    --color-secundario: #FC9824;
+    --color-terciario: rgb(18,37,20);
+    --color-cuaternario:#58EDF5;
     --marron:rgb(111,86,29);
     --blanco: #f5f7fb;
 }
@@ -24,7 +12,7 @@
 /* ----------- HEADER -------------------- */
 
 .logo{
-    width: 280px;
+    width: 180px;
 }
 
 .logo-varios{
@@ -33,7 +21,7 @@
 
 #header{
     width: 100%;
-    height: 65vh;
+    height: 600px;
     background-image: url(../assets/img/1958.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -47,7 +35,7 @@
     background-repeat: no-repeat;
 }
 
-#garra{
+.garra{
     background-image: url(../assets/img/garrita.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +43,8 @@
     font-weight: bold;
     padding: 20px;
 }
-#garra-activa{
+
+.garra-activa{
     background-image: url(../assets/img/garritablanca.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -63,12 +52,27 @@
     font-weight: bold;
     padding: 20px;
     color: black;
+    text-shadow: white 2px 2px 10px;
+}
+.nav-link.garra-activa {
+    color: black;
+}
+.nav-link.garra-activa:hover {
+    color: black;
 }
 
 .nav-link{
     color: white;
 }
-
+.nav-link:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    color: white;
+}
+.carrito {
+    text-shadow: black 2px 2px 10px;
+    z-index: 10;
+}
 
 /* ---------------- MAIN (CONTENIDO DE CADA PAGINA) -------------- */
 
@@ -82,10 +86,9 @@
 
 .texto-bienvenida{
     padding: 10px;
-    background-color: var(--naranja);
-    border: 2px solid var(--violeta);
-    box-shadow: 5px 5px 10px -3px var(--naranja), -5px -5px 150px 3px #00000069;
-    border-radius: 2mm;
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-primario);
+    box-shadow: 5px 5px 10px -3px var(--color-secundario), -5px -5px 150px 3px #00000069;
 }
 
 h2{
@@ -99,7 +102,7 @@ h2{
 #mascotas{
     position: absolute;
     width: 460px;
-    margin-left: 130px;
+
     margin-top: -260px;
 }
 
@@ -113,15 +116,12 @@ h2{
     display: none;
 }
 
-.bold{
-    font-weight: bold;
-}
 
 /* ---------------- FOOTER ----------------- */
 
 .footer{
     color: white;
-    background-color: var(--violeta);
+    background-color: var(--color-primario);
     border-top-left-radius: 80% 60%;
     border-top-right-radius: 80% 60%;
     min-height: 15vh;
@@ -145,7 +145,7 @@ h2{
 
 #redes a:hover{
     transform: scale(1.5);
-    transition: .5s;
+    transition: .3s ease-in-out;
 }
 
 .contacto{
@@ -163,7 +163,7 @@ h2{
 }
 
 .contacto a:hover{
-    color: var(--naranja);
+    color: var(--color-secundario);
 }
 
 /* -------------- MEDIA QUERIES -------------- */
@@ -174,30 +174,37 @@ h2{
         background-size: cover;
         display: flex;
         justify-content: space-between;
-        height: 45vh;
+        align-items: flex-start;
+        height: 330px;
     }
-    .logo{
-        height: 160px;
-    }
+    
     .texto-bienvenida h2,h3,h4{
         font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width:991px) {
-    .logo{
-        width: 160px;
-    }
-    #garra, #garra-activa{
-        background-image: none;
-        padding: 4px ;
-    }
+@media screen and (max-width:767px){
     #mascotas{
         display: none;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .logo{
+        width: 120px;
+    }
+    .garra-activa {
+        text-shadow: none;
+    }
+    .garra:not(.carrito), .garra-activa{
+        background-image: none;
+        padding: 4px ;
     }
     #gato1{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 1004px){
@@ -224,7 +231,7 @@ h2{
 @media screen and (max-width:1199px){
     #mascotas{
         width: 390px;
-        margin-left: 130px;
+
         margin-top: -270px;
     }    
 }

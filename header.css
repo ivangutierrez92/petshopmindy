@@ -1,0 +1,73 @@
+:root{
+    --color-primario: #751C65;
+    --color-secundario: #FC9824;
+    --color-terciario: rgb(18,37,20);
+    --color-cuaternario:#58EDF5;
+    --marron:rgb(111,86,29);
+    --blanco: #f5f7fb;
+}
+
+.logo{
+    width: 180px;
+}
+
+#header{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/img/bannersinperro.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.garra{
+    background-image: url(../assets/img/garrita.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.garra-activa{
+    background-image: url(../assets/img/garritablanca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+    text-shadow: white 2px 2px 10px;
+}
+.nav-link.garra-activa {
+    color: black;
+}
+.nav-link.garra-activa:hover {
+    color: black;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    color: white;
+}
+.carrito {
+    text-shadow: black 2px 2px 10px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 576px){
+    .logo{
+        display: none;
+    }
+    .garra:not(.carrito), .garra-activa{
+        text-shadow: none;
+        background-image: none;
+        padding: 4px ;
+    }
+}
