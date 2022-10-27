@@ -10,7 +10,7 @@ async function getData() {
 
     let check = [];
 
-    let toyFilt = articulos.filter(art => art.tipo.includes("Juguete"));
+    let medicamentoFilt = articulos.filter(art => art.tipo.includes("Medicamento"));
     filterSearch(check);
 
     checkbox.addEventListener("change", filterSearch);
@@ -21,17 +21,17 @@ async function getData() {
       checkItem = [...document.querySelectorAll('input[type="checkbox"]:checked')].map(element => element.value);
 
       if (checkItem.length == 0) {
-        filterchecked = [...toyFilt];
+        filterchecked = [...medicamentoFilt];
       } else {
         checkItem.forEach(value => {
           if (value == "barato") {
-            filterchecked = filterchecked.concat(toyFilt.filter(juguete => juguete.precio < 400));
+            filterchecked = filterchecked.concat(medicamentoFilt.filter(medicamento => medicamento.precio < 400));
           } else if (value == "medio") {
             filterchecked = filterchecked.concat(
-              toyFilt.filter(juguete => juguete.precio >= 400 && juguete.precio <= 700)
+              medicamentoFilt.filter(medicamento => medicamento.precio >= 400 && medicamento.precio <= 700)
             );
           } else if (value == "caro") {
-            filterchecked = filterchecked.concat(toyFilt.filter(juguete => juguete.precio >= 700));
+            filterchecked = filterchecked.concat(medicamentoFilt.filter(medicamento => medicamento.precio >= 700));
           }
         });
       }
@@ -51,7 +51,7 @@ async function getData() {
       }
 
       filterText.map(card => {
-        let estaEnCarrito = carrito.findIndex(juguete => juguete._id == card._id) != -1;
+        let estaEnCarrito = carrito.findIndex(medicamento => medicamento._id == card._id) != -1;
         makeCards(card, cardContainer, estaEnCarrito);
       });
 
@@ -59,7 +59,7 @@ async function getData() {
       elementoProducto.forEach(elemento => {
         elemento.addEventListener("click", event => {
           let target = event.currentTarget;
-          let juguete = toyFilt.find(juguete => juguete._id === target.id);
+          let medicamento = medicamentoFilt.find(medicamento => medicamento._id === target.id);
           let carrito = localStorage.getItem("carrito");
 
           if (!carrito) {
@@ -68,12 +68,12 @@ async function getData() {
             carrito = JSON.parse(carrito);
           }
           console.log(carrito);
-          if (carrito.findIndex(producto => producto._id === juguete._id) == -1) {
-            carrito.push(juguete);
+          if (carrito.findIndex(producto => producto._id === medicamento._id) == -1) {
+            carrito.push(medicamento);
 
             localStorage.setItem("carrito", JSON.stringify(carrito));
 
-            let boton = document.getElementById(`btn-carrito-${juguete._id}`);
+            let boton = document.getElementById(`btn-carrito-${medicamento._id}`);
 
             boton.classList.add("btn-success");
             boton.innerText = "Agregado a Carrito";
