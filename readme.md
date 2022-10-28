@@ -16,12 +16,13 @@ Tienda e-commerce del rubro cuidado de mascotas consumiendo una API para el list
 
 
 ## 👷 Hecho por:
-* @ivangutierrez92
-* @cristianeze16
-* @joacogambra
-* @cesar-trigo
-* @Oliver29s
-* @FabrizioCatanzaro
+* [@ivangutierrez92](https://github.com/ivangutierrez92)
+* [@cristianeze16](https://github.com/cristianeze16)
+* [@joacogambra](https://github.com/joacogambra)
+* [@cesar-trigo](https://github.com/cesar-trigo)
+* [@FabrizioCatanzaro](https://github.com/FabrizioCatanzaro)
+* [@Oliver29s](https://github.com/Oliver29s)
+
 
 
 
