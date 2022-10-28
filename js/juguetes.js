@@ -58,7 +58,7 @@ async function getData() {
       if(!filterText.length) {
         cardContainer.innerHTML = `
         <h2 class="text-danger w-100 bg-white">
-        No se pudo encontrar productos con los filtros establecidos. Por favor, utilice otros filtros.
+        No se pudo encontrar productos con los filtros establecidos, guau. Por favor, utilice otros filtros, guau.
         </h2>`
       }
 
