@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindy - Carrito</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/a6d542c7b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="carrito.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <header></header>
+
+    <main id="js-main" class="flex-grow-1 container py-4">
+      <div class="row gap-2">
+        <div class="row col-lg-9">
+          <div class="hstack gap-3 mb-3">
+            <div class="fs-4 text-brand">Carro</div>
+            <div class="vr"></div>
+            <div class="fs-4" id="js-cantidad-productos"></div>
+          </div>
+          <hr />
+          <div id="js-productos">
+            
+          </div>
+        </div>
+        <div class="col-lg-3 bg-light pb-3">
+          <p class="fs-3 mt-3">Total</p>
+          <hr />
+          <div class="d-flex justify-content-between flex-wrap mb-3">
+            <p class="fs-5">Total Precio:</p>
+            <p id="js-precio-total" class="fs-5">$ 555.555</p>
+          </div>
+          <button id="js-boton-pagar" class="btn-brand w-100 text-center fs-5">Pagar</button>
+        </div>
+      </div>
+      <button id="js-vaciar-carro" class="text-brand"><i class="fa-solid fa-trash-can"></i> Vaciar carro de compras</button>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./carrito.js"></script>
+  </body>
+</html>

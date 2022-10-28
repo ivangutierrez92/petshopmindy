@@ -36,7 +36,7 @@
 }
 
 .formulario-texto-check {
-  color: rgba(255, 255, 255, 0.922);
+  color: rgba(255, 255, 255, 0.922)
 }
 
 .form-tex-chebox {
@@ -61,6 +61,7 @@
   transition: all 0.1s ease-in;
 }
 
+
 .btn-brand:hover {
   background-color: var(--color-cuaternario);
 }
@@ -72,6 +73,7 @@
 
 .mapa {
   width: 400px;
+
   box-shadow: 2px 2px 5px var(--color-terciario);
 }
 
