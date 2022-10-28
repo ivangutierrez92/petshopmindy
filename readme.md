@@ -4,9 +4,6 @@
 Tienda e-commerce del rubro cuidado de mascotas consumiendo una API para el listado de productos que se ofrecen a los potenciales clientes.
 
 
-
-### Visitar el sitio web desde el link: [petshopmindy.com](https://acavalapaginademindy.com/ "PetShop Mindy")
-
 ---
 
 ## 🔨 Desarrollado con:
