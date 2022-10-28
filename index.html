@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://kit.fontawesome.com/a6d542c7b4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/garritablanca.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet" />
+    <title>Mindy PetShop</title>
+  </head>
+
+  <body>
+    <header class="pt-3 px-4" id="header">
+      <img src="./assets/img/logo-mindy.png" class="logo mb-5" alt="logo mindy" />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link garra-activa" href="#">Inicio</a>
+              <a class="nav-link garra" href="./contacto.html">Contacto</a>
+              <a class="nav-link garra" href="./juguetes.html">Juguetes</a>
+              <a class="nav-link garra" href="./medicamentos.html">Remedios</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <a class="nav-link position-fixed end-0 bottom-0 garra carrito" href="./carrito.html"
+        ><i class="fa-sharp fa-solid fa-cart-shopping fs-3"></i
+      ></a>
+    </header>
+    <div>
+      <main class="flex-grow-1 container py-4">
+        <div class="texto-bienvenida rounded">
+          <h2>Bienvenidos a Mindy</h2>
+          <h3>
+            Contamos con amplia variedad de <span class="fw-bold">juguetes</span> y
+            <span class="fw-bold">productos farmacéuticos</span> para cuidar a tus mascotas.
+          </h3>
+          <img src="./assets/img/row.png" alt="perro golden retriever" id="mascotas" />
+          <h4>
+            <span class="fw-bold">¿Por qué Mindy?</span> La historia es un poco larga pero intentaré resumirla: Mindy es
+            nuestra perrita que nos acompaña en nuestras vidas hace ya más de 13 años, rescatada de un hogar donde
+            sufrió constantes maltratos y mala alimentación con apenas 2 meses de vida. Gracias a la ayuda de unos
+            vecinos pudimos encontrar la forma de quedarnosla y cuidarla. En ese momento nos dimos cuenta que nuestra
+            verdadera pasión son los animales, y es por eso que decidimos dedicarnos a la venta de insumos para el
+            cuidado de sus hermosas mascotas &#128154; Podés encontrar nuestra tienda física en el barrio de Caballito
+            (CABA) y seguramente puedas conocer a Mindy que se la pasa durmiendo en su colchoncito del hall de entrada
+            &#128518;
+          </h4>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="true">
+          <h2>Mascotas que visitaron Mindy</h2>
+          <img src="./assets/img/gato.png" alt="gato" id="gato1" />
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner carrusel">
+            <div class="carousel-item active">
+              <img src="./assets/img/carouselimg1.jpg" class="d-block w-100" alt="Foto mascota 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/carouselimg2.jpg" class="d-block w-100" alt="Foto mascota 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/carouselimg3.jpg" class="d-block w-100" alt="Foto mascota 3" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="d-flex justify-content-around footer">
+        <div class="sociales-footer">
+          <h5>Encontranos en las redes</h5>
+          <div id="redes">
+            <a href="https://wa.me/549110303456" target="_blank"
+              ><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="whatsapp"
+            /></a>
+            <a href="https://instagram.com/mindypetshop" target="_blank"
+              ><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="instagram"
+            /></a>
+            <a href="https://facebook.com/mindypetshop" target="_blank"
+              ><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="facebook"
+            /></a>
+          </div>
+        </div>
+        <div class="contacto">
+          <p class="ps-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cursor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"
+              />
+            </svg>
+            <a href="https://goo.gl/maps/7iMX4zg1mA3byB8X9" target="_blank">Rio de Janeiro 300, Caballito, CABA</a>
+          </p>
+          <p class="ps-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-forward-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+            <a href="tel:+54-9-11-0303-456" target="_blank">+54 9 11-0303-456</a>
+          </p>
+          <p class="ps-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+              />
+            </svg>
+            <a href="mailto:mindypetshop@gmail.com" target="_blank">mindypetshop@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+  --color-primario: #751c65;
+  --color-secundario: rgb(18, 37, 20);
+  --color-terciario: #f18408;
+  --color-cuaternario: #f16508;
+  --marron: rgb(111, 86, 29);
+  --blanco: #f5f7fb;
+}
+
+.logo {
+  width: 280px;
+}
+
+/* empieza formulario de contacto */
+#form {
+  margin-top: -50px;
+}
+
+.formulario {
+  background-image: linear-gradient(-225deg, rgb(18, 37, 20) 50%, var(--color-primario) 50%);
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.titulo-de-form {
+  margin: 0.5rem;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.765);
+  -webkit-text-stroke: 0.2px black;
+}
+
+.formulario-texto-check {
+  color: rgba(255, 255, 255, 0.922);
+}
+
+.form-tex-chebox {
+  color: white;
+  font-weight: bolder;
+}
+
+.img-fomulario {
+  width: 150px;
+  height: 98px;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn-brand {
+  border: none;
+  background-color: var(--color-terciario);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 5px 10px;
+  transition: all 0.1s ease-in;
+}
+
+.btn-brand:hover {
+  background-color: var(--color-cuaternario);
+}
+
+.contenedor-form {
+  display: flex;
+  align-items: center;
+}
+
+.mapa {
+  width: 400px;
+
+  box-shadow: 2px 2px 5px var(--color-terciario);
+}
+
+.mapa:hover {
+  box-shadow: 2px 2px 20px var(--color-cuaternario);
+}
+
+.mascotascontacto {
+  position: absolute;
+  width: 280px;
+  margin-top: -100px;
+}
+
+.huellas {
+  position: absolute;
+  width: 240px;
+  margin-left: 140px;
+  z-index: -1;
+}
+
+/* termina formulario de contacto */
+
+@media only screen and (max-width: 768px) {
+  .contenedor-form {
+    flex-direction: column;
+  }
+
+  .mapa {
+    margin-top: 40px;
+    width: 350px;
+  }
+
+  .huellas {
+    margin-top: 280px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .huellas {
+    width: 160px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contenedor-form {
+    flex-direction: column;
+  }
+
+  .mapa {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mascotascontacto {
+    width: 220px;
+    margin-top: -75px;
+  }
+}

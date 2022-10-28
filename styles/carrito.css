@@ -1,0 +1,36 @@
+:root {
+  --color-primario: #751c65;
+  --color-secundario: rgb(18, 37, 20);
+  --color-terciario: #f18408;
+  --color-cuaternario: #f16508;
+  --marron: rgb(111, 86, 29);
+  --blanco: #f5f7fb;
+}
+
+.btn-brand {
+  border: none;
+  background-color: var(--color-terciario);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 5px 10px;
+  transition: all 0.1s ease-in;
+}
+
+.btn-brand.rounded-0 {
+  padding: 6px;
+}
+
+.btn-brand:hover {
+  background-color: var(--color-cuaternario);
+}
+
+.border-brand {
+  border-style: solid;
+  border-color: var(--color-primario);
+}
+
+.text-brand {
+  color: var(--color-primario);
+  border: 0;
+  background: none;
+}
