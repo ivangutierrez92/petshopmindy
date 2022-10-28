@@ -88,7 +88,7 @@ async function getData() {
 
     function makeCards(data, container, enCarrito) {
       container.innerHTML += `
-          <div class="col">
+          <div class="col flex-wrap">
             <div class="card h-100 m-auto js-card" id="${data._id}">
               <img src="${data.imagen}">
                 <div class="card-body ">
