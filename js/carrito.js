@@ -159,7 +159,7 @@ function eliminarProducto(id, lista) {
 function finalizarCompra() {
   localStorage.removeItem("carrito");
   alert(
-    "La compra se ha realizado con los datos de transacción automática que conseguimos. Los productos llegarán a la brevedad. Gracias por su compra"
+    "La compra se ha realizado con los datos de transacción automática que conseguimos. Los productos llegarán a la brevedad. Gracias por su compra."
   );
   location.href = "./index.html";
 }

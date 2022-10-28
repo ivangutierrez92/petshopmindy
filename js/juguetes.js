@@ -50,10 +50,17 @@ async function getData() {
         carrito = JSON.parse(carrito);
       }
 
-      filterText.map(card => {
+      filterText.forEach(card => {
         let estaEnCarrito = carrito.findIndex(juguete => juguete._id == card._id) != -1;
         makeCards(card, cardContainer, estaEnCarrito);
       });
+      
+      if(!filterText.length) {
+        cardContainer.innerHTML = `
+        <h2 class="text-danger w-100 bg-white">
+        No se pudo encontrar productos con los filtros establecidos. Por favor, utilice otros filtros.
+        </h2>`
+      }
 
       let elementoProducto = document.querySelectorAll(".js-card");
       elementoProducto.forEach(elemento => {

@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --color-primario: #751c65;
   --color-secundario: rgb(18, 37, 20);
@@ -36,7 +30,7 @@
 }
 
 .formulario-texto-check {
-  color: rgba(255, 255, 255, 0.922)
+  color: rgba(255, 255, 255, 0.922);
 }
 
 .form-tex-chebox {
@@ -60,7 +54,6 @@
   padding: 5px 5px 10px;
   transition: all 0.1s ease-in;
 }
-
 
 .btn-brand:hover {
   background-color: var(--color-cuaternario);
@@ -111,8 +104,8 @@
   }
 }
 
-@media screen and (max-width:530px){
-  .huellas{
+@media screen and (max-width: 530px) {
+  .huellas {
     width: 160px;
     margin-left: 0;
   }
@@ -128,7 +121,7 @@
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   .mascotascontacto {
     width: 220px;
     margin-top: -75px;

@@ -1,9 +1,9 @@
-:root{
-  --color-primario: #751C65;
-  --color-secundario: rgb(18,37,20);
+:root {
+  --color-primario: #751c65;
+  --color-secundario: rgb(18, 37, 20);
   --color-terciario: #f18408;
   --color-cuaternario: #f16508;
-  --marron:rgb(111,86,29);
+  --marron: rgb(111, 86, 29);
   --blanco: #f5f7fb;
 }
 
