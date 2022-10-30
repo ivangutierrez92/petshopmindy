@@ -16,7 +16,7 @@
 
 .card {
   cursor: pointer;
-  width: 14rem;
+  width: 225px;
   background: rgb(255, 255, 255);
   border-radius: 5px;
   border: 1px solid var(--celeste);
@@ -26,13 +26,6 @@
 .card:hover {
   box-shadow: 12px 12px 2px 1px var(--naranja);
 }
-.logo {
-  width: 280px;
-}
-
-.bg-white {
-  background-color: white;
-}
 
 .container {
   text-align: center;
@@ -41,27 +34,32 @@
 .nav {
   background-color: var(--color-primario);
 }
+
 .medicamentosmascotas {
   position: absolute;
   z-index: -1;
   width: 350px;
   margin-top: -160px;
 }
+
 .dogboxer {
   width: 320px;
   position: absolute;
   z-index: -1;
   margin-top: -150px;
 }
+
 .golden {
   width: 190px;
   z-index: -1;
 }
+
 .huellitas {
   position: absolute;
   z-index: -1;
   width: 600px;
 }
+
 .card-huella {
   background-image: url(../assets/img/huellas3.png);
   background-position: center;
@@ -83,12 +81,12 @@
     margin-left: -50px;
     margin-top: -140px;
   }
-}
-
-@media screen and (max-width: 648px) {
   .dogboxer {
     width: 240px;
   }
+}
+
+@media screen and (max-width: 648px) {
   .golden {
     width: 140px;
   }
@@ -102,6 +100,9 @@
   }
 }
 @media screen and (max-width: 486px) {
+  .card {
+    width: 200px
+  }
   .dogboxer {
     width: 155px;
     margin-top: -100px;
@@ -110,6 +111,11 @@
     width: 90px;
   }
   .huellitas {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dogboxer, .medicamentosmascotas {
     display: none;
   }
 }

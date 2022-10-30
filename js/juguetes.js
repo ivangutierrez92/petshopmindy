@@ -101,7 +101,7 @@ async function getData() {
                 <div class="card-body ">
                 <h5 class="card-title">${data.nombre}</h5>
                 <div class="d-flex justify-content-center w-100">
-                  <div class="p-2 border border-info rounded-pill my-2">Precio:$ ${data.precio}</div>
+                  <div class="p-2 border border-info rounded-pill my-2">Precio: $${data.precio}</div>
                 </div>
                 <i href="#" id="btn-carrito-${
                   data._id
