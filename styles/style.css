@@ -1,13 +1,13 @@
 /* -------- COLORES GLOBALES ------------- */
 
 :root {
-    --color-primario: #751C65;
-    --color-secundario: #FC9824;
-    --color-terciario: rgb(18, 37, 20);
-    --color-cuaternario: #58EDF5;
+    --color-primario: #751c65;
+    --color-secundario: rgb(18, 37, 20);
+    --color-terciario: #f18408;
+    --color-cuaternario: #f16508;
     --marron: rgb(111, 86, 29);
     --blanco: #f5f7fb;
-}
+  }
 
 /* ----------- HEADER -------------------- */
 
@@ -91,9 +91,9 @@
 
 .texto-bienvenida {
     padding: 10px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-terciario);
     border: 2px solid var(--color-primario);
-    box-shadow: 5px 5px 10px -3px var(--color-secundario), -5px -5px 150px 3px #00000069;
+    box-shadow: 5px 5px 10px -3px var(--color-terciario), -5px -5px 150px 3px #00000069;
 }
 
 h2 {
@@ -169,7 +169,7 @@ h2 {
 }
 
 .contacto a:hover {
-    color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 /* -------------- MEDIA QUERIES -------------- */

@@ -119,7 +119,7 @@
 }
 
 .contacto a:hover {
-  color: var(--color-secundario);
+  color: var(--color-terciario);
 }
 
 @media screen and (max-width: 1004px) {
